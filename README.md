@@ -1,231 +1,180 @@
-# ProDev Consulting Limited Website
+# ProDev Consulting
 
-A production-ready, visually premium website for ProDev Consulting Limited—a Nigeria-based consulting firm providing professional services for development programs across public and private sectors.
+A modern, responsive website for ProDev Consulting - a development consulting firm providing professional services for development programs across Nigeria and Africa.
 
-## Overview
+![ProDev Consulting](https://img.shields.io/badge/Built%20with-Next.js%2014-black?style=flat&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-cyan?style=flat&logo=tailwindcss)
 
-This website is built with **Next.js (App Router) + TypeScript + TailwindCSS + Framer Motion** to deliver excellent performance, accessibility, SEO, and conversion-focused design.
+## 🌐 Live Website
 
-### Key Features
+**Coming Soon** - Deployed on Vercel/Netlify
 
-- **Fortune 500-grade design**: Clean, modern, credible, and trust-heavy aesthetic
-- **Comprehensive Information Architecture**: Home, Services, Sectors, Case Studies, Insights, About, Contact
-- **Interactive Elements**: Sticky header, smooth animations, filtering systems, accordion FAQs
-- **SEO-Optimized**: Meta tags, Open Graph, JSON-LD schema, sitemap.xml, robots.txt
-- **Fully Responsive**: Mobile, tablet, and desktop optimized
-- **Accessible**: Semantic HTML, ARIA labels, keyboard navigation support
-- **Forms**: Proposal intake form with validation, honeypot spam protection
+## 📋 Overview
 
-## Tech Stack
+ProDev Consulting offers expertise in:
+- **Program Design & Technical Advisory** - Strategic planning and evidence-based advisory
+- **Project Management Support** - Implementation oversight and resource optimization  
+- **MEL/MERL Services** - Monitoring, evaluation, and learning systems
+- **Digital Transformation** - Technology solutions for development programs
+- **Capacity Building & Training** - Skills development and institutional strengthening
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS
-- **UI Components**: Custom components with Tailwind
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Build Output**: Static export for hosting
+## 🚀 Tech Stack
 
-## Project Structure
+- **Framework:** [Next.js 14](https://nextjs.org/) with App Router
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
 
-```
-prodev-website/
-├── app/                    # Next.js App Router pages
-│   ├── page.tsx           # Home page
-│   ├── layout.tsx         # Root layout with metadata
-│   ├── globals.css        # Global styles
-│   ├── services/          # Services hub + detail pages
-│   ├── sectors/           # Sectors hub + detail pages
-│   ├── case-studies/      # Case studies hub + detail pages
-│   ├── insights/          # Blog/insights hub + detail pages
-│   ├── about/             # About page
-│   ├── contact/           # Contact page with proposal form
-│   └── policies/          # Privacy, Terms, Cookies, Compliance
-├── components/            # React components
-│   ├── Header.tsx         # Navigation header
-│   ├── Footer.tsx         # Site footer
-│   ├── ServiceDetailTemplate.tsx
-│   ├── SectorDetailTemplate.tsx
-│   ├── CaseStudyTemplate.tsx
-│   └── InsightTemplate.tsx
-├── lib/                   # Utility functions
-│   └── utils.ts
-├── content/               # Content files (for future CMS)
-├── public/               # Static assets
-│   ├── images/           # Image assets
-│   ├── sitemap.xml       # SEO sitemap
-│   └── robots.txt        # SEO robots
-├── next.config.ts        # Next.js configuration
-├── tailwind.config.ts    # Tailwind configuration
-├── tsconfig.json         # TypeScript configuration
-└── package.json          # Dependencies
-```
+## 📦 Installation
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18.x or later
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
 ```bash
-cd prodev-website
-```
+# Clone the repository
+git clone https://github.com/JumareKenz/prodev.git
+cd prodev
 
-2. Install dependencies:
-```bash
+# Install dependencies
 npm install
-```
 
-3. Run the development server:
-```bash
+# Run development server
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Build for Production
+## 🏗️ Build
 
 ```bash
+# Create production build
 npm run build
+
+# The output will be in the `dist` folder
 ```
 
-This creates a static export in the `dist/` directory ready for deployment.
+## 📁 Project Structure
 
-## Deployment
+```
+app/
+├── page.tsx                    # Home page
+├── about/page.tsx              # About us
+├── contact/page.tsx            # Contact form
+├── services/                   # Services hub + detail pages
+│   ├── page.tsx
+│   ├── program-design/
+│   ├── project-management/
+│   ├── monitoring-evaluation/
+│   ├── digital-transformation/
+│   └── capacity-building/
+├── sectors/                    # Sectors hub + detail pages
+│   ├── page.tsx
+│   ├── health/
+│   ├── education/
+│   ├── governance/
+│   ├── climate/
+│   └── livelihoods/
+├── case-studies/               # Case studies hub + detail pages
+│   ├── page.tsx
+│   ├── health-systems-initiative/
+│   ├── education-workforce/
+│   └── climate-resilience/
+├── insights/                   # Insights/blog hub + articles
+│   ├── page.tsx
+│   └── [6 article pages]/
+└── policies/                   # Legal pages
+    ├── privacy/
+    ├── terms/
+    ├── cookies/
+    └── compliance/
 
-### Vercel (Recommended)
+components/
+├── ui/                         # shadcn/ui components
+├── ServiceDetailTemplate.tsx   # Service page template
+├── SectorDetailTemplate.tsx    # Sector page template
+├── CaseStudyTemplate.tsx       # Case study template
+├── InsightTemplate.tsx         # Article template
+└── [layout components]/
 
-1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
-2. Import the project in [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and configure the build settings
-4. Your site will be deployed with a preview URL
+content/                        # Content data
+├── case-studies/
+├── insights/
+└── [markdown content]/
 
-### Other Static Hosts
+public/                         # Static assets
+```
 
-The `dist/` folder contains the static export and can be deployed to any static hosting service:
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
-- Firebase Hosting
-- Cloudflare Pages
-
-## Editing Content
-
-### Services
-
-Service content is located in:
-- `app/services/page.tsx` - Services hub listing
-- `app/services/[service-name]/page.tsx` - Individual service pages
-
-### Sectors
-
-Sector content is located in:
-- `app/sectors/page.tsx` - Sectors hub listing
-- `app/sectors/[sector-name]/page.tsx` - Individual sector pages
-
-### Case Studies
-
-Case studies are defined in:
-- `app/case-studies/page.tsx` - Case studies hub with filtering
-- `app/case-studies/[case-study-name]/page.tsx` - Individual case study pages
-
-### Insights/Blog
-
-Blog posts are defined in:
-- `app/insights/page.tsx` - Insights hub with search/filter
-- `app/insights/[article-slug]/page.tsx` - Individual article pages
-
-## Brand Guidelines
+## 🎨 Design System
 
 ### Colors
-
-| Token | Value | Usage |
-|-------|-------|-------|
-| `primary-600` | `#0284c7` | Primary buttons, links |
-| `primary-700` | `#0369a1` | Hover states |
-| `primary-50` | `#f0f9ff` | Light backgrounds |
-| `neutral-900` | `#171717` | Primary text |
-| `neutral-600` | `#525252` | Secondary text |
-| `neutral-50` | `#fafafa` | Backgrounds |
+- **Primary:** Electric Blue (#2563EB) to Cyan gradient
+- **Secondary:** Violet (#7C3AED) to Purple
+- **Accent:** Teal (#14B8A6) to Emerald
+- **Neutral:** Slate gray scale
 
 ### Typography
+- **Display:** Bold, modern sans-serif
+- **Body:** Clean, readable sans-serif
+- **Accent:** Gradient text effects
 
-- **Font Family**: Inter (Google Fonts)
-- **Headings**: Semibold, tight letter-spacing
-- **Body**: Regular, comfortable line-height
+### Features
+- ✨ Glassmorphism cards with backdrop blur
+- 🎭 Framer Motion animations
+- 📱 Fully responsive design
+- 🌙 Dark sections with vibrant gradients
+- ♿ Accessible components
 
-### Spacing
+## 📝 Content Management
 
-- Section padding: `py-16` to `py-24` (responsive)
-- Container max-width: `max-w-7xl` (1280px)
-- Card padding: `p-6` to `p-8`
+### Case Studies
+Add new case studies by creating a folder in `app/case-studies/[slug]/page.tsx` using the `CaseStudyTemplate` component.
 
-## SEO Configuration
+### Insights/Articles
+Add new articles by creating a folder in `app/insights/[slug]/page.tsx` using the `InsightTemplate` component.
 
-### Meta Tags
+### Services & Sectors
+Extend services or sectors by:
+1. Adding the page in `app/services/[slug]/page.tsx` or `app/sectors/[slug]/page.tsx`
+2. Using the respective template component
+3. Adding the entry to the hub page data array
 
-Site-wide metadata is configured in `app/layout.tsx`. Page-specific metadata is set in each page's `metadata` export.
+## 🚀 Deployment
 
-### Sitemap
+### Static Export
+This project is configured for static export:
 
-Update `public/sitemap.xml` when adding new pages. The current sitemap includes all main pages with appropriate priorities.
+```js
+// next.config.mjs
+const nextConfig = {
+  output: 'export',
+  distDir: 'dist',
+}
+```
 
-### Analytics
+Deploy the `dist` folder to:
+- **Vercel:** `vercel --prod`
+- **Netlify:** Drag and drop the `dist` folder
+- **GitHub Pages:** Push `dist` to `gh-pages` branch
 
-Add your Google Analytics or other tracking code to the layout or create a separate component for tracking.
+## 🤝 Contributing
 
-## Forms
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
-### Proposal Form
+## 📄 License
 
-The proposal form includes:
-- Organization and contact information
-- Project type and sector selection
-- Timeline and budget range
-- File upload placeholder (requires backend integration)
-- Honeypot spam protection
-- Client-side validation
+Proprietary - © 2025 ProDev Consulting. All rights reserved.
 
-To enable form submission:
-1. Add a server action or API route
-2. Connect to email service (SendGrid, Resend, etc.) or database
-3. Update the `handleSubmit` function in `app/contact/page.tsx`
+## 📞 Contact
 
-## Performance Optimization
-
-- Images: Use Next.js Image component (configured for static export)
-- Fonts: Self-host or use `next/font` for optimization
-- Animations: Use `will-change` and `transform` for GPU acceleration
-- Lazy loading: Implemented via Intersection Observer in Framer Motion
-
-## Accessibility
-
-- Semantic HTML structure
-- ARIA labels on interactive elements
-- Keyboard navigation support
-- Focus indicators on interactive elements
-- Color contrast compliant with WCAG 2.1 AA
-
-## Browser Support
-
-- Chrome (latest 2 versions)
-- Firefox (latest 2 versions)
-- Safari (latest 2 versions)
-- Edge (latest 2 versions)
-
-## License
-
-© 2024 ProDev Consulting Limited. All rights reserved.
-
-## Support
-
-For technical support or questions about this website, contact:
-- Email: info@prodevconsulting.ng
+**ProDev Consulting**  
+📍 Abuja, Nigeria  
+📧 info@prodevconsulting.ng  
+🌐 www.prodevconsulting.ng
 
 ---
 
-**Note**: This website uses placeholder content for sample data. Replace with actual client information, case studies, team bios, and metrics before production deployment.
+Built with ❤️ by [Jumare Kenz](https://github.com/JumareKenz)
