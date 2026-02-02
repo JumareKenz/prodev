@@ -22,8 +22,8 @@ const sectorsLinks = [
 
 const companyLinks = [
   { label: "About Us", href: "/about/" },
-  { label: "Case Studies", href: "/case-studies/" },
-  { label: "Insights", href: "/insights/" },
+  // { label: "Case Studies", href: "/case-studies/" },
+  // { label: "Insights", href: "/insights/" },
   { label: "Contact", href: "/contact/" },
 ];
 
@@ -81,17 +81,17 @@ export default function Footer() {
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
                   <Mail size={18} className="text-cyan-400" />
                 </div>
-                <a href="mailto:info@prodevconsulting.ng" className="hover:text-cyan-400 transition-colors">
-                  info@prodevconsulting.ng
-                </a>
+                <a href="mailto:support@prodevconsults.org" className="hover:text-cyan-400 transition-colors">
+                support@prodevconsults.org
+              </a>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
                   <Phone size={18} className="text-cyan-400" />
                 </div>
-                <a href="tel:+234XXXXXXXXXX" className="hover:text-cyan-400 transition-colors">
-                  +234 XXX XXX XXXX
-                </a>
+                <a href="tel:+2349099214425" className="hover:text-cyan-400 transition-colors">
+                +234 909 921 4425
+              </a>
               </div>
             </div>
 

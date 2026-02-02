@@ -225,7 +225,7 @@ export default function HomePage() {
         {/* Animated Background */}
         <div className="absolute inset-0 animated-gradient opacity-10" />
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-cyan-50 to-purple-50" />
-        
+
         {/* Floating Orbs */}
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0], scale: [1, 1.1, 1] }}
@@ -282,8 +282,8 @@ export default function HomePage() {
                 transition={{ delay: 0.5, duration: 0.6 }}
                 className="text-body-lg text-neutral-600 max-w-xl leading-relaxed"
               >
-                We provide expert consulting and project management services that enhance 
-                program design, delivery, monitoring, and evaluation across public and 
+                We provide expert consulting and project management services that enhance
+                program design, delivery, monitoring, and evaluation across public and
                 private sectors in Nigeria and Africa.
               </motion.p>
 
@@ -312,9 +312,9 @@ export default function HomePage() {
                 className="flex items-center space-x-8 pt-4"
               >
                 {[
-                  { label: "Projects Delivered", value: "100+" },
+                  { label: "Projects Delivered", value: "20+" },
                   { label: "Expert Consultants", value: "25+" },
-                  { label: "Years Experience", value: "10+" },
+                  { label: "Years Combined Experience", value: "40+" },
                 ].map((stat, index) => (
                   <motion.div
                     key={stat.label}
@@ -402,7 +402,7 @@ export default function HomePage() {
       <section className="relative py-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-cyan-600 to-purple-600" />
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0aDR2NGgtNHpNMzQgMzZoNHY0aC00eiIvPjwvZz48L2c+PC9zdmc+')]" />
-        
+
         <div className="container-wide relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -449,7 +449,7 @@ export default function HomePage() {
               What We <span className="text-gradient">Do</span>
             </h2>
             <p className="text-body-lg text-neutral-600">
-              Comprehensive consulting services spanning the full program lifecycle, 
+              Comprehensive consulting services spanning the full program lifecycle,
               from initial design through implementation, evaluation, and learning.
             </p>
           </motion.div>
@@ -506,7 +506,7 @@ export default function HomePage() {
               How We <span className="text-gradient-blue">Work</span>
             </h2>
             <p className="text-body-lg text-neutral-600">
-              A systematic approach that ensures quality, accountability, and measurable 
+              A systematic approach that ensures quality, accountability, and measurable
               results at every stage of engagement.
             </p>
           </motion.div>
@@ -531,12 +531,11 @@ export default function HomePage() {
                 >
                   <div className="bg-white rounded-2xl p-8 shadow-lg shadow-blue-500/5 border border-neutral-100 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 h-full">
                     <div className="relative mb-6">
-                      <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${
-                        index === 0 ? 'from-blue-500 to-blue-600' :
-                        index === 1 ? 'from-cyan-500 to-cyan-600' :
-                        index === 2 ? 'from-teal-500 to-teal-600' :
-                        'from-purple-500 to-purple-600'
-                      } flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                      <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${index === 0 ? 'from-blue-500 to-blue-600' :
+                          index === 1 ? 'from-cyan-500 to-cyan-600' :
+                            index === 2 ? 'from-teal-500 to-teal-600' :
+                              'from-purple-500 to-purple-600'
+                        } flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
                         <step.icon className="w-8 h-8 text-white" />
                       </div>
                       <span className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-sm font-bold text-neutral-400 shadow-md">
@@ -556,7 +555,7 @@ export default function HomePage() {
       {/* Featured Case Studies - Enhanced */}
       <section className="section-padding bg-gradient-to-b from-neutral-50 to-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent" />
-        
+
         <div className="container-wide relative">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <motion.div {...fadeInLeft} className="max-w-2xl">
@@ -711,7 +710,7 @@ export default function HomePage() {
       {/* Proof & Trust Section - Enhanced with animated stats */}
       <section className="section-padding bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-50/30 to-transparent" />
-        
+
         <div className="container-wide relative">
           <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 text-sm font-semibold rounded-full mb-4">
@@ -721,7 +720,7 @@ export default function HomePage() {
               Quality & <span className="text-gradient">Trust</span>
             </h2>
             <p className="text-body-lg text-neutral-600">
-              Our commitment to excellence is backed by rigorous quality assurance 
+              Our commitment to excellence is backed by rigorous quality assurance
               and internationally recognized methodologies.
             </p>
           </motion.div>
@@ -763,7 +762,7 @@ export default function HomePage() {
             <div className="relative p-8 lg:p-12">
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
-                  { value: "100+", label: "Programs Supported" },
+                  { value: "20+", label: "Programs Supported" },
                   { value: "5,000+", label: "Stakeholders Trained" },
                   { value: "15+", label: "States Covered" },
                   { value: "1M+", label: "Data Points Analyzed" },
@@ -794,7 +793,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Partnerships Section */}
+      {/* Partnerships Section - COMMENTED OUT
       <section className="section-padding-sm bg-neutral-50 relative overflow-hidden">
         <div className="container-wide">
           <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto mb-12">
@@ -828,12 +827,13 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+      */}
 
       {/* Final CTA Section - Enhanced */}
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-500 to-purple-600" />
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')]" />
-        
+
         {/* Floating Elements */}
         <motion.div
           animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
@@ -867,7 +867,7 @@ export default function HomePage() {
               Ready to Enhance Your Program Impact?
             </h2>
             <p className="text-body-lg text-blue-100 mb-10">
-              Let&apos;s discuss how ProDev Consulting can support your organization&apos;s 
+              Let&apos;s discuss how ProDev Consulting can support your organization&apos;s
               goals with expert consulting, implementation support, and MEL services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

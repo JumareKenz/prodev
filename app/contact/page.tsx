@@ -76,18 +76,18 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    content: "info@prodevconsulting.ng",
+    content: "support@prodevconsults.org",
     description: "We reply within 24 hours",
     color: "from-cyan-500 to-teal-500",
-    href: "mailto:info@prodevconsulting.ng",
+    href: "mailto:support@prodevconsults.org",
   },
   {
     icon: Phone,
     title: "Call Us",
-    content: "+234 XXX XXX XXXX",
+    content: "+234 909 921 4425",
     description: "Mon-Fri, 9am-5pm WAT",
     color: "from-violet-500 to-purple-500",
-    href: "tel:+234XXXXXXXXXX",
+    href: "tel:+2349099214425",
   },
 ];
 
@@ -184,7 +184,7 @@ function ContactFormContent() {
         </motion.div>
         <h2 className="text-2xl font-bold text-neutral-900 mb-4">Thank You!</h2>
         <p className="text-neutral-600 mb-6">
-          Your {activeForm === "proposal" ? "proposal request" : "message"} has been received. 
+          Your {activeForm === "proposal" ? "proposal request" : "message"} has been received.
           We will get back to you within 2 business days.
         </p>
         <button
@@ -209,22 +209,20 @@ function ContactFormContent() {
       <div className="flex border-b border-neutral-200">
         <button
           onClick={() => setActiveForm("proposal")}
-          className={`flex-1 py-4 px-6 text-sm font-medium transition-all flex items-center justify-center gap-2 ${
-            activeForm === "proposal"
+          className={`flex-1 py-4 px-6 text-sm font-medium transition-all flex items-center justify-center gap-2 ${activeForm === "proposal"
               ? "bg-gradient-to-r from-blue-50 to-cyan-50 text-blue-600 border-b-2 border-blue-500"
               : "text-neutral-600 hover:bg-neutral-50"
-          }`}
+            }`}
         >
           <FileText className="w-4 h-4" />
           Request a Proposal
         </button>
         <button
           onClick={() => setActiveForm("general")}
-          className={`flex-1 py-4 px-6 text-sm font-medium transition-all flex items-center justify-center gap-2 ${
-            activeForm === "general"
+          className={`flex-1 py-4 px-6 text-sm font-medium transition-all flex items-center justify-center gap-2 ${activeForm === "general"
               ? "bg-gradient-to-r from-blue-50 to-cyan-50 text-blue-600 border-b-2 border-blue-500"
               : "text-neutral-600 hover:bg-neutral-50"
-          }`}
+            }`}
         >
           <MessageSquare className="w-4 h-4" />
           General Contact
@@ -244,9 +242,8 @@ function ContactFormContent() {
                   name="orgName"
                   value={formData.orgName}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.orgName ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.orgName ? "border-red-300" : "border-neutral-200"
+                    }`}
                   placeholder="Your organization"
                 />
                 {errors.orgName && <p className="mt-1 text-sm text-red-600">{errors.orgName}</p>}
@@ -261,9 +258,8 @@ function ContactFormContent() {
                   name="contactName"
                   value={formData.contactName}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.contactName ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.contactName ? "border-red-300" : "border-neutral-200"
+                    }`}
                   placeholder="Your full name"
                 />
                 {errors.contactName && <p className="mt-1 text-sm text-red-600">{errors.contactName}</p>}
@@ -278,9 +274,8 @@ function ContactFormContent() {
                   name="contactRole"
                   value={formData.contactRole}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.contactRole ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.contactRole ? "border-red-300" : "border-neutral-200"
+                    }`}
                   placeholder="e.g., Program Director"
                 />
                 {errors.contactRole && <p className="mt-1 text-sm text-red-600">{errors.contactRole}</p>}
@@ -295,9 +290,8 @@ function ContactFormContent() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.email ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.email ? "border-red-300" : "border-neutral-200"
+                    }`}
                   placeholder="you@organization.org"
                 />
                 {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
@@ -335,9 +329,8 @@ function ContactFormContent() {
                   name="projectType"
                   value={formData.projectType}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.projectType ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.projectType ? "border-red-300" : "border-neutral-200"
+                    }`}
                 >
                   <option value="">Select project type</option>
                   {projectTypes.map((type) => (
@@ -355,9 +348,8 @@ function ContactFormContent() {
                   name="sector"
                   value={formData.sector}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.sector ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.sector ? "border-red-300" : "border-neutral-200"
+                    }`}
                 >
                   <option value="">Select sector</option>
                   {sectors.map((sector) => (
@@ -438,9 +430,8 @@ function ContactFormContent() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.name ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.name ? "border-red-300" : "border-neutral-200"
+                    }`}
                   placeholder="Your full name"
                 />
                 {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
@@ -455,9 +446,8 @@ function ContactFormContent() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                    errors.email ? "border-red-300" : "border-neutral-200"
-                  }`}
+                  className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.email ? "border-red-300" : "border-neutral-200"
+                    }`}
                   placeholder="you@email.com"
                 />
                 {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
@@ -473,9 +463,8 @@ function ContactFormContent() {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${
-                  errors.subject ? "border-red-300" : "border-neutral-200"
-                }`}
+                className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all ${errors.subject ? "border-red-300" : "border-neutral-200"
+                  }`}
                 placeholder="How can we help?"
               />
               {errors.subject && <p className="mt-1 text-sm text-red-600">{errors.subject}</p>}
@@ -490,9 +479,8 @@ function ContactFormContent() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={6}
-                className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none ${
-                  errors.message ? "border-red-300" : "border-neutral-200"
-                }`}
+                className={`w-full px-4 py-3 bg-neutral-50 border rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all resize-none ${errors.message ? "border-red-300" : "border-neutral-200"
+                  }`}
                 placeholder="Tell us more about your inquiry..."
               />
               {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
@@ -565,7 +553,7 @@ export default function ContactPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-body-lg text-neutral-600 leading-relaxed"
             >
-              Ready to discuss your project? Have a question about our services? 
+              Ready to discuss your project? Have a question about our services?
               We&apos;d love to hear from you. Choose the option that best fits your needs.
             </motion.p>
           </div>
@@ -574,7 +562,7 @@ export default function ContactPage() {
 
       <section className="py-20 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-blue-100/30 to-transparent rounded-full blur-3xl" />
-        
+
         <div className="container-wide relative">
           <div className="grid lg:grid-cols-3 gap-12">
             <motion.div variants={fadeInLeftVariants} initial="initial" animate="animate" className="lg:col-span-1">
