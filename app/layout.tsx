@@ -70,6 +70,14 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.png", sizes: "any" },
+    ],
+    apple: [
+      { url: "/favicon.png" },
+    ],
+  },
 };
 
 export default function RootLayout({
