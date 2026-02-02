@@ -315,22 +315,37 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.6 }}
-                className="flex items-center space-x-8 pt-4"
+                className="flex flex-wrap justify-center lg:justify-start gap-4 pt-6"
               >
                 {[
-                  { label: "Projects Delivered", value: "20+" },
-                  { label: "Expert Consultants", value: "25+" },
-                  { label: "Years Combined Experience", value: "40+" },
+                  { label: "Projects Delivered", value: "20+", icon: "📊" },
+                  { label: "Expert Consultants", value: "25+", icon: "👥" },
+                  { label: "Years Combined Experience", value: "40+", icon: "⭐" },
                 ].map((stat, index) => (
                   <motion.div
                     key={stat.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.8 + index * 0.1, duration: 0.5 }}
-                    className="text-center"
+                    initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ delay: 0.8 + index * 0.15, duration: 0.5, type: "spring", stiffness: 200 }}
+                    whileHover={{ y: -4, scale: 1.02 }}
+                    className="relative group"
                   >
-                    <p className="text-3xl font-bold text-gradient">{stat.value}</p>
-                    <p className="text-sm text-neutral-500 font-medium">{stat.label}</p>
+                    {/* Gradient border effect */}
+                    <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-cyan-500 to-purple-500 rounded-2xl opacity-30 group-hover:opacity-60 blur transition-all duration-300" />
+
+                    {/* Card content */}
+                    <div className="relative bg-white/90 backdrop-blur-xl rounded-2xl px-6 py-5 border border-white/50 shadow-lg shadow-blue-500/10 text-center min-w-[140px]">
+                      <div className="text-2xl mb-1">{stat.icon}</div>
+                      <motion.p
+                        className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 bg-clip-text text-transparent"
+                        initial={{ scale: 0.5 }}
+                        animate={{ scale: 1 }}
+                        transition={{ delay: 1 + index * 0.1, type: "spring", stiffness: 300 }}
+                      >
+                        {stat.value}
+                      </motion.p>
+                      <p className="text-xs lg:text-sm text-neutral-600 font-medium mt-1 leading-tight">{stat.label}</p>
+                    </div>
                   </motion.div>
                 ))}
               </motion.div>
