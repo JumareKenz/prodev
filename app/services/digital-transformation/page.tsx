@@ -62,12 +62,12 @@ const serviceData = {
   relatedCaseStudies: [
     {
       title: "Health Information System Digitization",
-      href: "/case-studies/health-systems-initiative/",
+      href: "/coming-soon/",
       sector: "Health",
     },
     {
       title: "Education Data Dashboard Development",
-      href: "/case-studies/education-workforce/",
+      href: "/coming-soon/",
       sector: "Education",
     },
   ],

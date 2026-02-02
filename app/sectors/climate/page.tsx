@@ -68,14 +68,14 @@ const sectorData = {
   relatedCaseStudies: [
     {
       title: "Climate Resilience Assessment",
-      href: "/case-studies/climate-resilience/",
+      href: "/coming-soon/",
       service: "Research & Evaluation",
     },
   ],
   relatedInsights: [
     {
       title: "Community-Based Adaptation Lessons Learned",
-      href: "/insights/",
+      href: "/coming-soon/",
       category: "Program Design",
     },
   ],

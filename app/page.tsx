@@ -299,8 +299,14 @@ export default function HomePage() {
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
+                {/* Commented out - Case Studies link
                 <Link href="/case-studies/" className="btn-outline group">
                   View Case Studies
+                  <ChevronRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                */}
+                <Link href="/services/" className="btn-outline group">
+                  Our Services
                   <ChevronRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </motion.div>
@@ -532,9 +538,9 @@ export default function HomePage() {
                   <div className="bg-white rounded-2xl p-8 shadow-lg shadow-blue-500/5 border border-neutral-100 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 h-full">
                     <div className="relative mb-6">
                       <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${index === 0 ? 'from-blue-500 to-blue-600' :
-                          index === 1 ? 'from-cyan-500 to-cyan-600' :
-                            index === 2 ? 'from-teal-500 to-teal-600' :
-                              'from-purple-500 to-purple-600'
+                        index === 1 ? 'from-cyan-500 to-cyan-600' :
+                          index === 2 ? 'from-teal-500 to-teal-600' :
+                            'from-purple-500 to-purple-600'
                         } flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
                         <step.icon className="w-8 h-8 text-white" />
                       </div>
@@ -553,6 +559,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Case Studies - Enhanced */}
+      {/* Featured Case Studies - COMMENTED OUT
       <section className="section-padding bg-gradient-to-b from-neutral-50 to-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent" />
 
@@ -625,6 +632,7 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+      */}
 
       {/* Sectors We Serve - Enhanced with icons */}
       <section className="section-padding bg-gradient-to-br from-neutral-900 via-blue-950 to-purple-950 text-white relative overflow-hidden">

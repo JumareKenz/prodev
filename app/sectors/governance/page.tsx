@@ -68,14 +68,14 @@ const sectorData = {
   relatedCaseStudies: [
     {
       title: "Local Government Transparency Initiative",
-      href: "/case-studies/",
+      href: "/coming-soon/",
       service: "MEL & Capacity Building",
     },
   ],
   relatedInsights: [
     {
       title: "Measuring Governance Outcomes in Complex Contexts",
-      href: "/insights/",
+      href: "/coming-soon/",
       category: "Governance & Delivery",
     },
   ],

@@ -62,12 +62,12 @@ const serviceData = {
   relatedCaseStudies: [
     {
       title: "Multi-State Health Program Coordination",
-      href: "/case-studies/health-systems-initiative/",
+      href: "/coming-soon/",
       sector: "Health",
     },
     {
       title: "Education Intervention Implementation Support",
-      href: "/case-studies/education-workforce/",
+      href: "/coming-soon/",
       sector: "Education",
     },
   ],

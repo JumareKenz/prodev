@@ -62,12 +62,12 @@ const serviceData = {
   relatedCaseStudies: [
     {
       title: "Government M&E Officer Training Program",
-      href: "/case-studies/health-systems-initiative/",
+      href: "/coming-soon/",
       sector: "Health",
     },
     {
       title: "NGO Institutional Strengthening Initiative",
-      href: "/case-studies/education-workforce/",
+      href: "/coming-soon/",
       sector: "Education",
     },
   ],

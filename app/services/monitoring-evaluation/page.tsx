@@ -62,12 +62,12 @@ const serviceData = {
   relatedCaseStudies: [
     {
       title: "State-Level Health MEL System Strengthening",
-      href: "/case-studies/health-systems-initiative/",
+      href: "/coming-soon/",
       sector: "Health",
     },
     {
       title: "Education Program Impact Evaluation",
-      href: "/case-studies/education-workforce/",
+      href: "/coming-soon/",
       sector: "Education",
     },
   ],

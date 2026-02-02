@@ -68,14 +68,14 @@ const sectorData = {
   relatedCaseStudies: [
     {
       title: "Youth Skills Development Program",
-      href: "/case-studies/",
+      href: "/coming-soon/",
       service: "Training & MEL",
     },
   ],
   relatedInsights: [
     {
       title: "Market Systems Approaches in Practice",
-      href: "/insights/",
+      href: "/coming-soon/",
       category: "Program Design",
     },
   ],

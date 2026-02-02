@@ -68,19 +68,19 @@ const sectorData = {
   relatedCaseStudies: [
     {
       title: "Teacher Training Program Impact Evaluation",
-      href: "/case-studies/education-workforce/",
+      href: "/coming-soon/",
       service: "MEL & Training",
     },
   ],
   relatedInsights: [
     {
       title: "Measuring Learning Outcomes in Low-Resource Settings",
-      href: "/insights/learning-outcomes/",
+      href: "/coming-soon/",
       category: "MEL/Data Quality",
     },
     {
       title: "Effective Teacher Professional Development Models",
-      href: "/insights/teacher-development/",
+      href: "/coming-soon/",
       category: "Capacity Building",
     },
   ],

@@ -62,12 +62,12 @@ const serviceData = {
   relatedCaseStudies: [
     {
       title: "State Health Sector Strategy Development",
-      href: "/case-studies/health-systems-initiative/",
+      href: "/coming-soon/",
       sector: "Health",
     },
     {
       title: "Education Program Design for Rural Communities",
-      href: "/case-studies/education-workforce/",
+      href: "/coming-soon/",
       sector: "Education",
     },
   ],

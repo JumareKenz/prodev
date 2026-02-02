@@ -68,19 +68,19 @@ const sectorData = {
   relatedCaseStudies: [
     {
       title: "State Primary Healthcare MEL System",
-      href: "/case-studies/health-systems-initiative/",
+      href: "/coming-soon/",
       service: "MEL & Digital Systems",
     },
   ],
   relatedInsights: [
     {
       title: "Strengthening Health Data Quality at Facility Level",
-      href: "/insights/health-data-quality/",
+      href: "/coming-soon/",
       category: "MEL/Data Quality",
     },
     {
       title: "Community Health Worker Program Best Practices",
-      href: "/insights/community-health-workers/",
+      href: "/coming-soon/",
       category: "Program Design",
     },
   ],
